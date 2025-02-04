@@ -1,6 +1,13 @@
-confirm('Hey you are Vanni right?')
-
-confirm('so ready to see something special ?')
+const password=["261105"];
+let userInput=prompt("Enter the password");
+if (password.includes(userInput)){
+    document.body.style.visibility="visible";
+    confirm('so ready to see something special ?')
+}  
+else{
+    document.body.style.visibility="visible";
+    document.body.innerHTML="<h2>Sorry, you are not authorized to view this page</h2>";
+}
 let box=document.querySelector(".box")
 let btn=document.querySelector(".button")
 btn.addEventListener("click",()=>{
@@ -65,5 +72,6 @@ btn1.addEventListener("click",()=>{
     
     document.body.style.transition='all ease-in 2s'
     })
-    
+
+
     
